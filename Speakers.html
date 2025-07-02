@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers - BSCS Educational Tour</title>
+    <style>
+        body {
+            font-family: 'Roboto', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 20px 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-links a:hover {
+            background-color: #f8f9fa;
+            border-bottom-color: #4285f4;
+            color: #4285f4;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 30px;
+        }
+
+        .speaker-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .speaker-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .speaker-avatar {
+            width: 130px;
+            height: 130px;
+            font-size: 3em;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: 300;
+        }
+
+        .speaker-name {
+            font-size: 1.3em;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .speaker-title {
+            color: #4285f4;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .speaker-bio {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Days</a></li>
+                    <li><a href="Speakers.html">Speakers</a></li>
+                    <li><a href="Venue.html">Venues</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="speakers" class="section">
+            <h2 class="section-title">The Speakers</h2>
+            <div class="speakers-grid" style="grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <div class="speaker-card" style="padding: 40px 30px;">
+                    <img class="speaker-avatar" src="img/Speaker 1.jpg" alt="Carlo Quezon" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;">
+                    <div class="speaker-name" style="font-size:1.5em;">CARLO QUEZON</div>
+                    <div class="speaker-title" style="font-size:1.1em;">FoundEver</div>
+                    <div class="speaker-bio" style="font-size:1.05em;">
+                        <p>The Recruitment Marketing and Sourcing Manager at Foundever, Carlo has 8 years of experience in the recruiting industry. A University of Saint La Salle graduate from Bacolod, he has been with the company since before its rebranding from Sitel. Carlo has managed several teams supporting Talent Acquisition and Human Resources, covering both sourcing and recruitment, and is known for his leadership and dedication to talent development.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card" style="padding: 40px 30px;">
+                    <img class="speaker-avatar" src="img/Speaker 2.jpg" alt="Atty Yves Gonzalez" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;">
+                    <div class="speaker-name" style="font-size:1.5em;">Atty YVES GONZALEZ</div>
+                    <div class="speaker-title" style="font-size:1.1em;">Google Philippines</div>
+                    <div class="speaker-bio" style="font-size:1.05em;">
+                        <p>Yves is part of the Government Affairs and Public Policy team at Google Southeast Asia, focusing on the Philippines, Cambodia, and Laos. He collaborates with government departments and civil society to advance Google’s mission of organizing the world’s information and building a more helpful Google for everyone. His expertise bridges technology, policy, and public service.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card" style="padding: 40px 30px;">
+                    <img class="speaker-avatar" src="img/Speaker 3.png" alt="Beatriz Grace Banjibod" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;">
+                    <div class="speaker-name" style="font-size:1.5em;">BEATRIZ GRACE BANJIBOD</div>
+                    <div class="speaker-title" style="font-size:1.1em;">Teleperformance</div>
+                    <div class="speaker-bio" style="font-size:1.05em;">
+                        <p>Beatriz has guided clients through event details and served as their personal coordinator throughout planning and execution. She is skilled in managing accounts payable and ensuring key client needs are met promptly. With strong interpersonal and computer skills, Beatriz has a solid background in customer service and excels at managing challenging client situations.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card" style="padding: 40px 30px;">
+                    <img class="speaker-avatar" src="img/Speaker 4.jpg" alt="Jazmine Claire Calma" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;">
+                    <div class="speaker-name" style="font-size:1.5em;">JAZMINE CLAIRE CALMA</div>
+                    <div class="speaker-title" style="font-size:1.1em;">Kollab</div>
+                    <div class="speaker-bio" style="font-size:1.05em;">
+                        <p>Jazmine is a Computer Engineering graduate from Asia Pacific College, certified by Amazon, Google Cloud, and ISTQB, and trained through Google’s Women Developer Academy. She is passionate about volunteering, serving as a lead and WTM ambassador for GDG Cloud Manila, and mentoring for Unilab Foundation’s STEM+ PH program.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card" style="padding: 40px 30px;">
+                    <img class="speaker-avatar" src="img/Speaker 5.jpg" alt="Matt Farley" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;">
+                    <div class="speaker-name" style="font-size:1.5em;">MATT FARLEY</div>
+                    <div class="speaker-title" style="font-size:1.1em;">Asian Development Bank</div>
+                    <div class="speaker-bio" style="font-size:1.05em;">
+                        <p>Matt is a talented business engagement manager with a passion for improving organizational performance and building trust-based relationships. He sets high standards for success and inspires his teams to take initiative and drive performance. Matt is recognized as a high-integrity leader who supports and develops his team to achieve excellence.</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card" style="padding: 40px 30px;">
+                    <img class="speaker-avatar" src="img/Speaker 6.jpg" alt="Haidee C. Enriquez" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:25px;">
+                    <div class="speaker-name" style="font-size:1.5em;">HAIDEE C. ENRIQUEZ</div>
+                    <div class="speaker-title" style="font-size:1.1em;">Microsourcing</div>
+                    <div class="speaker-bio" style="font-size:1.05em;">
+                        <p>Haidee is a seasoned leader with 30 years of management experience, including 15 years in HR and general management in the BPO/Contact Center industry. She was awarded "People Manager of the Year" in 2017 by the People Management Association of the Philippines (PMAP), recognizing her outstanding leadership and contributions to the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

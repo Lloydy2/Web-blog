@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues - BSCS Educational Tour</title>
+    <style>
+        body {
+            font-family: 'Roboto', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 20px 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-links a:hover {
+            background-color: #f8f9fa;
+            border-bottom-color: #4285f4;
+            color: #4285f4;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .venue-section {
+            margin-bottom: 60px;
+        }
+
+        .venue-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .venue-photo {
+            flex: 1;
+            min-width: 340px;
+            max-width: 540px;
+        }
+
+        .venue-photo img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .venue-map {
+            flex: 1;
+            min-width: 340px;
+            max-width: 540px;
+        }
+
+        .venue-map iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .venue-address {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #222;
+        }
+
+        @media (max-width: 900px) {
+            .venue-flex {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .venue-photo, .venue-map {
+                max-width: 100%;
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Days</a></li>
+                    <li><a href="Speakers.html">Speakers</a></li>
+                    <li><a href="Venue.html">Venues</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            <!-- FOUNDEVER -->
+        <section class="section venue-section">
+            <h2 class="section-title" style="color:#2966e3;">FOUNDEVER</h2>
+            <div class="venue-flex">
+                <div class="venue-photo">
+                    <img src="img\Foundever building.jpg" alt="Foundever Office">
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=1+Doña+Julia+Vargas+Ave,+Pasig,+Metro+Manila&output=embed"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="venue-address">
+                1 Doña Julia Vargas Ave, Pasig, Metro Manila.
+            </div>
+        </section>
+
+        <!-- GOOGLE (now 2nd) -->
+        <section class="section venue-section">
+            <h2 class="section-title" style="color:#2966e3;">GOOGLE</h2>
+            <div class="venue-flex">
+                <div class="venue-photo">
+                    <img src="img\Google Philippines Building.jpg" alt="Google Philippines Office">
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Seven+NEO+Building,+BGC,+Taguig+City&output=embed"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="venue-address">
+                Seven NEO Building, 38th Floor, 5th Avenue, BGC, Taguig City.
+            </div>
+        </section>
+
+        <!-- TELEPERFORMANCE -->
+        <section class="section venue-section">
+            <h2 class="section-title" style="color:#2966e3;">TELEPERFORMANCE</h2>
+            <div class="venue-flex">
+                <div class="venue-photo">
+                    <img src="img\tp building.jpg" alt="Teleperformance Office">
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Teleperformance+Aura,+BGC,+Taguig+City&output=embed"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="venue-address">
+                Teleperformance Aura, 26th St, BGC, Taguig City.
+            </div>
+        </section>
+
+        <!-- KOLLAB -->
+        <section class="section venue-section">
+            <h2 class="section-title" style="color:#2966e3;">KOLLAB</h2>
+            <div class="venue-flex">
+                <div class="venue-photo">
+                    <img src="img\Kollab Building.jpg" alt="Kollab Office">
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=G/F+BSA+Twin+Towers,+Bank+Drive,+Ortigas+Center+1550+Mandaluyong,+Philippines&output=embed"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="venue-address">
+                G/F BSA Twin Towers, Bank Drive, Ortigas Center 1550 Mandaluyong, Philippines.
+            </div>
+        </section>
+
+        <!-- ASIAN DEVELOPMENT BANK -->
+        <section class="section venue-section">
+            <h2 class="section-title" style="color:#2966e3;">ASIAN DEVELOPMENT BANK</h2>
+            <div class="venue-flex">
+                <div class="venue-photo">
+                    <img src="img\ADV building.jpg" alt="Asian Development Bank">
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Asian+Development+Bank,+Ortigas,+Mandaluyong+City&output=embed"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="venue-address">
+                6 ADB Avenue, Ortigas Center, Mandaluyong City.
+            </div>
+        </section>
+
+        <!-- MICROSOURCING -->
+        <section class="section venue-section">
+            <h2 class="section-title" style="color:#2966e3;">MICROSOURCING</h2>
+            <div class="venue-flex">
+                <div class="venue-photo">
+                    <img src="img\Microsourcing building.jpg" alt="Microsourcing Office">
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Cyberscape+Ortigas,+Ortigas+Center,+Pasig,+Metro+Manila,+Philippines&output=embed"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="venue-address">
+                Cyberscape Ortigas, Ortigas Center, Pasig, Metro Manila, Philippines.
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
